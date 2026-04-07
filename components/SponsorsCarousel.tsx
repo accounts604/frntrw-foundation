@@ -53,6 +53,13 @@ export default function SponsorsCarousel() {
         .sponsors-track:hover { animation-play-state: paused; }
         .sponsor-logo { filter: grayscale(100%); opacity: 0.45; transition: opacity 0.3s, filter 0.3s; }
         .sponsor-logo:hover { filter: grayscale(0%) brightness(1) !important; opacity: 1 !important; }
+        @media (max-width: 768px) {
+          .sponsors-track { gap: 40px !important; }
+        }
+        @media (max-width: 480px) {
+          .sponsors-track { gap: 28px !important; }
+          .sponsor-logo { width: 84px !important; height: 32px !important; }
+        }
       `}</style>
     </section>
   )

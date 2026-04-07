@@ -31,7 +31,7 @@ export default function Lanes() {
         <div style={{ position: 'relative', overflow: 'hidden', minHeight: 700, display: 'flex', flexDirection: 'column' }} className="lane-item">
           <Image src="/images/lane-community.jpg" alt="FRNTRW Community Programme" fill style={{ objectFit: 'cover', transition: 'transform 0.8s ease' }} className="lane-bg-img" />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(13,13,11,0.97) 0%,rgba(13,13,11,0.7) 45%,rgba(13,13,11,0.3) 100%)' }} />
-          <div style={{ position: 'relative', zIndex: 2, padding: '56px 52px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: '100%' }}>
+          <div className="lane-inner" style={{ position: 'relative', zIndex: 2, padding: '56px 52px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: '100%' }}>
             <div style={{ display: 'inline-block', fontSize: 9, letterSpacing: 3, textTransform: 'uppercase', padding: '5px 14px', marginBottom: 24, width: 'fit-content', background: 'rgba(245,243,238,0.08)', color: 'rgba(245,243,238,0.6)', border: '0.5px solid rgba(245,243,238,0.15)' }}>
               Free · Open Access
             </div>
@@ -63,7 +63,7 @@ export default function Lanes() {
         <div style={{ position: 'relative', overflow: 'hidden', minHeight: 700, display: 'flex', flexDirection: 'column' }} className="lane-item">
           <Image src="/images/lane-academy.jpg" alt="FRNTRW Academy" fill style={{ objectFit: 'cover', transition: 'transform 0.8s ease' }} className="lane-bg-img" />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(13,13,11,0.97) 0%,rgba(13,13,11,0.72) 45%,rgba(13,13,11,0.35) 100%)' }} />
-          <div style={{ position: 'relative', zIndex: 2, padding: '56px 52px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: '100%' }}>
+          <div className="lane-inner" style={{ position: 'relative', zIndex: 2, padding: '56px 52px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: '100%' }}>
             <div style={{ display: 'inline-block', fontSize: 9, letterSpacing: 3, textTransform: 'uppercase', padding: '5px 14px', marginBottom: 24, width: 'fit-content', background: 'var(--gold)', color: 'var(--black)' }}>
               Paid · Performance-Focused
             </div>
@@ -97,6 +97,11 @@ export default function Lanes() {
           .lanes-grid { grid-template-columns: 1fr !important; }
           .lane-divider { display: none !important; }
           .lane-item { min-height: 520px !important; }
+          .lane-inner { padding: 36px 28px !important; }
+        }
+        @media (max-width: 480px) {
+          .lane-item { min-height: 460px !important; }
+          .lane-inner { padding: 28px 20px !important; }
         }
       `}</style>
     </section>

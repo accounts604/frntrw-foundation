@@ -25,7 +25,7 @@ export default function WhyWeExist() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+        <div className="why-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
           <div style={{ background: 'var(--mid)', padding: '32px 24px' }}>
             <div style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 8 }}>Market Rate</div>
             <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 48, color: 'var(--white)', lineHeight: 1 }}>$24–$50</div>
@@ -40,7 +40,7 @@ export default function WhyWeExist() {
               Community Programme<br />Subsidised by sponsors
             </div>
           </div>
-          <div style={{ background: 'var(--mid)', padding: 24, gridColumn: 'span 2', borderTop: '1px solid rgba(245,243,238,0.08)' }}>
+          <div className="why-stats-full" style={{ background: 'var(--mid)', padding: 24, gridColumn: 'span 2', borderTop: '1px solid rgba(245,243,238,0.08)' }}>
             <div style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.75, color: 'rgba(245,243,238,0.5)' }}>
               For a family with two athletes that&apos;s <strong style={{ color: 'var(--white)', fontWeight: 500 }}>$2,500–$5,200 saved every year</strong> — reinvested directly into the athletes we serve.
             </div>
@@ -51,6 +51,10 @@ export default function WhyWeExist() {
       <style>{`
         @media (max-width: 768px) {
           .why-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+        }
+        @media (max-width: 480px) {
+          .why-stats-grid { grid-template-columns: 1fr !important; }
+          .why-stats-full { grid-column: span 1 !important; }
         }
       `}</style>
     </section>

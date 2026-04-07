@@ -45,9 +45,11 @@ export default function Pillars() {
         .pillar-hover:hover { background: #edecea !important; }
         @media (max-width: 768px) {
           .pillars-grid { grid-template-columns: 1fr 1fr !important; }
+          .pillar-item { padding: 28px 20px 32px !important; }
         }
         @media (max-width: 480px) {
           .pillars-grid { grid-template-columns: 1fr !important; }
+          .pillar-item { padding: 24px 16px 28px !important; }
         }
       `}</style>
     </section>

@@ -14,7 +14,7 @@ export default function Impact() {
             { num: '3', label: 'Clinics Delivered', note: 'All delivered before a single dollar of formal funding' },
             { num: '10', label: 'Volunteer Coaches', note: 'Premium coaching team — all self-funded, all committed' },
           ].map((s, i) => (
-            <div key={s.label} style={{ padding: '0 32px', borderLeft: i === 0 ? 'none' : '2px solid rgba(0,0,0,0.12)', paddingLeft: i === 0 ? 0 : 32 }}>
+            <div key={s.label} className={`impact-stat-item${i === 0 ? ' impact-stat-first' : ''}`} style={{ padding: '0 32px', borderLeft: i === 0 ? 'none' : '2px solid rgba(0,0,0,0.12)', paddingLeft: i === 0 ? 0 : 32 }}>
               <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 64, color: 'var(--black)', lineHeight: 1, fontWeight: 300 }}>{s.num}</div>
               <div style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', marginTop: 6 }}>{s.label}</div>
               <div style={{ fontSize: 13, fontWeight: 300, color: 'rgba(0,0,0,0.45)', marginTop: 8, lineHeight: 1.6 }}>{s.note}</div>
@@ -27,6 +27,8 @@ export default function Impact() {
         @media (max-width: 768px) {
           .impact-inner { grid-template-columns: 1fr !important; gap: 40px !important; }
           .impact-stats { grid-template-columns: 1fr !important; }
+          .impact-stat-item { border-left: none !important; padding-left: 0 !important; border-top: 1.5px solid rgba(0,0,0,0.12); padding-top: 24px !important; }
+          .impact-stat-first { border-top: none !important; padding-top: 0 !important; }
         }
       `}</style>
     </section>

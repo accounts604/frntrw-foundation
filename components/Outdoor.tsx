@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Outdoor() {
   return (
-    <section style={{ position: 'relative', height: 520, overflow: 'hidden' }}>
+    <section className="outdoor-section" style={{ position: 'relative', height: 520, overflow: 'hidden' }}>
       <Image
         src="/images/outdoor.jpg"
         alt="Outdoor training session"
@@ -22,6 +22,14 @@ export default function Outdoor() {
           View Programmes
         </a>
       </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .outdoor-section { height: clamp(400px, 65vh, 520px) !important; }
+        }
+        @media (max-width: 480px) {
+          .outdoor-section { height: auto !important; min-height: 380px !important; }
+        }
+      `}</style>
     </section>
   )
 }

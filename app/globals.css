@@ -115,4 +115,26 @@ body {
     --pad-x: 20px;
     --pad-y: 64px;
   }
+  .section-intro {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --pad-x: 16px;
+    --pad-y: 48px;
+  }
+  .section-h2 {
+    line-height: 1;
+  }
+  .section-intro {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .btn-gold, .btn-ghost {
+    padding: 13px 24px;
+    font-size: 10px;
+  }
 }

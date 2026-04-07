@@ -22,7 +22,7 @@ export default function PartnerSection() {
   return (
     <section id="sponsor" style={{ background: 'var(--black)', color: 'var(--white)', position: 'relative', overflow: 'hidden' }}>
       {/* Hero */}
-      <div style={{ position: 'relative', height: 500, overflow: 'hidden' }}>
+      <div className="sponsor-hero-img" style={{ position: 'relative', height: 500, overflow: 'hidden' }}>
         <Image src="/images/sponsor-hero.jpg" alt="FRNTRW coaching team" fill style={{ objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(0.35)' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom,transparent 15%,rgba(13,13,11,0.97) 100%)' }} />
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '60px var(--pad-x)' }}>
@@ -38,8 +38,8 @@ export default function PartnerSection() {
         {/* Stats */}
         <div className="sponsor-value-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 2, background: 'var(--border-light)', marginBottom: 72 }}>
           {[['300+', 'Athletes & Families'], ['19K', 'Social Following'], ['60', 'Test Caps']].map(([num, label]) => (
-            <div key={label} style={{ background: 'var(--charcoal)', padding: '40px 36px' }}>
-              <div style={{ fontSize: 52, fontWeight: 300, color: 'var(--gold)', lineHeight: 1, marginBottom: 8, letterSpacing: -1 }}>{num}</div>
+            <div key={label} className="sponsor-value-item" style={{ background: 'var(--charcoal)', padding: '40px 36px' }}>
+              <div className="sponsor-value-num" style={{ fontSize: 52, fontWeight: 300, color: 'var(--gold)', lineHeight: 1, marginBottom: 8, letterSpacing: -1 }}>{num}</div>
               <div style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(245,243,238,0.4)' }}>{label}</div>
             </div>
           ))}
@@ -70,7 +70,7 @@ export default function PartnerSection() {
           </div>
 
           {/* EOI form */}
-          <div style={{ position: 'sticky', top: 88 }}>
+          <div className="eoi-sticky" style={{ position: 'sticky', top: 88 }}>
             <div style={{ background: 'rgba(245,243,238,0.03)', border: '0.5px solid var(--border)', padding: '44px 40px' }}>
               <div style={{ fontSize: 9, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 12 }}>Expression of Interest</div>
               <div style={{ fontSize: 26, fontWeight: 500, color: 'var(--white)', marginBottom: 8, lineHeight: 1.1 }}>Let&apos;s build something together.</div>
@@ -111,9 +111,17 @@ export default function PartnerSection() {
 
       <style>{`
         @media (max-width: 768px) {
-          .sponsor-value-grid { grid-template-columns: 1fr !important; }
+          .sponsor-hero-img { height: 380px !important; }
+          .sponsor-value-grid { grid-template-columns: 1fr 1fr !important; }
           .sponsor-two-col { grid-template-columns: 1fr !important; gap: 48px !important; }
           .fomo-strip { flex-direction: column !important; }
+          .eoi-sticky { position: static !important; }
+        }
+        @media (max-width: 480px) {
+          .sponsor-hero-img { height: 300px !important; }
+          .sponsor-value-grid { grid-template-columns: 1fr !important; }
+          .sponsor-value-item { padding: 28px 20px !important; }
+          .sponsor-value-num { font-size: 40px !important; }
         }
       `}</style>
     </section>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Team() {
   return (
     <section id="about" style={{ padding: 0 }}>
-      <div style={{ position: 'relative', height: 600, overflow: 'hidden' }}>
+      <div className="team-banner" style={{ position: 'relative', height: 600, overflow: 'hidden' }}>
         <Image
           src="/images/team-bg.jpg"
           alt="FRNTRW coaching team"
@@ -22,6 +22,14 @@ export default function Team() {
           </p>
         </div>
       </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .team-banner { height: clamp(400px, 60vh, 600px) !important; }
+        }
+        @media (max-width: 480px) {
+          .team-banner { height: auto !important; min-height: 360px !important; }
+        }
+      `}</style>
     </section>
   )
 }
