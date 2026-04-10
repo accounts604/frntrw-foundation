@@ -30,7 +30,7 @@ export default function WhyWeExist() {
             <div style={{ fontSize: 11, letterSpacing: 2, textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 8 }}>Market Rate</div>
             <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 48, color: 'var(--white)', lineHeight: 1 }}>$24–$50</div>
             <div style={{ fontSize: 13, color: 'rgba(245,243,238,0.4)', marginTop: 8, lineHeight: 1.5 }}>
-              per week, per athlete<br />Iron Up · JP Athletic
+              per week, per athlete<br />Market average
             </div>
           </div>
           <div style={{ background: 'var(--gold)', padding: '32px 24px' }}>

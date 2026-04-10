@@ -1,9 +1,9 @@
 const pillars = [
-  { num: '01', title: 'Technical Coaching', desc: 'Elite-level skill development from coaches who\'ve played at the top.' },
-  { num: '02', title: 'Physical Development', desc: 'Age-appropriate conditioning for long-term athletic performance.' },
-  { num: '03', title: 'Mental Resilience', desc: 'Mindset coaching, pressure management, and identity development.' },
-  { num: '04', title: 'Pathway Access', desc: 'Direct connections to academies, representative programmes, and selection.' },
-  { num: '05', title: 'Community Belonging', desc: 'Rooted in Pasifika values — collective strength and cultural pride.' },
+  { num: '01', title: 'Lead from the Front', desc: 'Building confidence to lead on a world stage — growing athletes who step up, not back.' },
+  { num: '02', title: 'Grassroots to High Performance', desc: 'Bridging the gap between grassroots and high performance across codes.' },
+  { num: '03', title: 'Integrity & Character', desc: 'Growing better people of integrity and character — on and off the field.' },
+  { num: '04', title: 'Mentorship & Leadership', desc: 'First-hand experience on a world stage. Real mentorship from those who\'ve been there.' },
+  { num: '05', title: 'Community Focused', desc: 'Rooted in Pasifika and Māori values — collective strength, cultural pride, and service.' },
 ]
 
 export default function Pillars() {

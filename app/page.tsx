@@ -22,9 +22,9 @@ export default function Home() {
         <Hero />
         <CensusStrip />
         <WhyWeExist />
-        <Team />
-        <Pillars />
         <Lanes />
+        <Pillars />
+        <Team />
         <Impact />
         <GroupPhoto />
         <Outdoor />

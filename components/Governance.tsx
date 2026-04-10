@@ -2,12 +2,6 @@ import Image from 'next/image'
 
 const board = [
   {
-    img: '/images/board-alex.jpg',
-    name: 'Alex Matapo',
-    title: 'Trustee — Operations & Programmes',
-    bio: "A long-standing member of Auckland's Pasifika sporting community, Alex brings operational expertise in programme delivery, volunteer coordination, and community engagement — ensuring the Foundation's activities run safely and consistently.",
-  },
-  {
     img: '/images/board-census.jpg',
     name: 'Census Johnston',
     title: 'Founder & Director',

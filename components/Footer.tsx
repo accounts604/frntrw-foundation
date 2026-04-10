@@ -39,7 +39,7 @@ export default function Footer() {
         <div>
           <div style={{ fontSize: 10, letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 20 }}>Programmes</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {[['#pathways', 'Community Programme'], ['#pathways', 'Academy Pathway'], ['#programmes', 'Our Five Pillars'], ['#register', 'Register an Athlete']].map(([href, label]) => (
+            {[['#pathways', 'Community Programme'], ['#pathways', 'High Performance Pathway'], ['#programmes', 'Our Five Pillars'], ['#register', 'Register an Athlete']].map(([href, label]) => (
               <a key={label} href={href} style={linkStyle} className="footer-link">{label}</a>
             ))}
           </div>
