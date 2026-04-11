@@ -36,7 +36,7 @@ export default function Register() {
       <div className="register-inner" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
         <div>
           <h2 style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 'clamp(48px,7vw,80px)', lineHeight: 0.9, color: 'var(--black)', marginBottom: 16, fontWeight: 500, letterSpacing: -1 }}>
-            Give your athlete the front row.
+            Lead from the front row.
           </h2>
           <p style={{ fontSize: 16, fontWeight: 300, lineHeight: 1.7, color: 'rgba(0,0,0,0.55)' }}>
             Limited spots per intake. Register your interest and we&apos;ll confirm your athlete&apos;s place in the next programme cycle.

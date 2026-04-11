@@ -30,11 +30,11 @@ export default function Hero() {
           letterSpacing: -2,
           marginBottom: 28,
         }}>
-          Built for<em style={{ color: 'var(--gold)', fontStyle: 'normal', display: 'block' }}>Frontrow</em>Athletes.
+          Lead from<em style={{ color: 'var(--gold)', fontStyle: 'normal', display: 'block' }}>the Front</em>Row.
         </h1>
 
         <p style={{ fontSize: 18, fontWeight: 300, lineHeight: 1.7, color: 'rgba(245,243,238,0.7)', maxWidth: 480, marginBottom: 40 }}>
-          Frntrw Foundation provides structured development pathways for Auckland athletes aged 10–17. Elite coaching. Real access. No athlete left behind.
+          Bridging the gap between grassroots and high performance across codes. Elite coaching, real mentorship, and pathways for Auckland athletes aged 10–17.
         </p>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>

@@ -13,7 +13,7 @@ export default function Pillars() {
         The Foundation
       </span>
       <h2 style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 500, fontSize: 'clamp(48px,6vw,80px)', lineHeight: 0.9, letterSpacing: -1, marginBottom: 20, color: 'var(--black)' }}>
-        Five pillars.<br />One mission.
+        Lead from the front.<br />Five pillars.
       </h2>
       <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.75, color: 'rgba(0,0,0,0.55)', maxWidth: 520, marginBottom: 56 }}>
         Every programme we run is built around five principles that close the gap between talent and opportunity.

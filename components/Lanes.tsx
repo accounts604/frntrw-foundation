@@ -6,7 +6,7 @@ export default function Lanes() {
       {/* Intro */}
       <div style={{ padding: 'var(--pad-y) var(--pad-x) 64px' }}>
         <span className="section-label">Our Programmes</span>
-        <h2 className="section-h2" style={{ color: 'var(--white)' }}>Two lanes.<br />One mission.</h2>
+        <h2 className="section-h2" style={{ color: 'var(--white)' }}>Two lanes.<br />One front row.</h2>
         <p className="section-intro">
           Every young Auckland athlete has a path in — regardless of background or budget. Choose the lane that fits where you&apos;re at right now.
         </p>
