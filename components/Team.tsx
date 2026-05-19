@@ -15,10 +15,10 @@ export default function Team() {
           <Image src="/images/icon-sm.png" width={28} height={23} alt="" style={{ objectFit: 'contain', marginBottom: 12, opacity: 0.8 }} />
           <span className="section-label">The Coaching Team</span>
           <h2 style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 'clamp(48px,7vw,80px)', lineHeight: 0.9, letterSpacing: -1, marginBottom: 18, fontWeight: 500, color: 'var(--white)' }}>
-            Eight coaches.<br />One standard.
+            Ten coaches.<br />One standard.
           </h2>
           <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.7, color: 'rgba(245,243,238,0.6)', maxWidth: 420 }}>
-            Every coach on this team has played professionally. All eight are here voluntarily — because they believe the next generation of Auckland athletes deserves access to the real thing.
+            Every coach on this team has played professionally. All ten are here voluntarily — because they believe the next generation of Auckland athletes deserves access to the real thing.
           </p>
         </div>
       </div>

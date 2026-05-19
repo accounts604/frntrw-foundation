@@ -29,105 +29,106 @@ export default function CapabilityClient() {
 
       {/* PAGE 1 */}
       <section className="cap-page-1 cap-sheet">
-        <header className="cap-header">
-          <div className="cap-brand">
-            <Image src="/images/icon-gold.png" width={42} height={36} alt="FRNTRW" style={{ objectFit: 'contain' }} />
-            <div className="cap-brand-text">
-              <div className="cap-wordmark">FRNTRW FOUNDATION</div>
-              <div className="cap-sub">Auckland · Established 2023 · Pasifika-led</div>
+        {/* Cover hero photo band */}
+        <div className="cap-cover">
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="FRNTRW Foundation coach on the field"
+            fill
+            sizes="(max-width:720px) 100vw, 760px"
+            style={{ objectFit: 'cover', objectPosition: 'center 25%' }}
+            priority
+          />
+          <div className="cap-cover-tint" />
+          <div className="cap-cover-content">
+            <div className="cap-cover-brand">
+              <Image src="/images/icon-gold.png" width={56} height={48} alt="FRNTRW" style={{ objectFit: 'contain' }} />
+              <div className="cap-cover-wordmark">
+                <div className="cap-wordmark">FRNTRW FOUNDATION</div>
+                <div className="cap-sub">Auckland · Pasifika-led · Established 2023</div>
+              </div>
+            </div>
+            <div className="cap-cover-title">
+              Built for Frontrow Athletes.
+            </div>
+            <div className="cap-cover-meta">
+              <span>Capability Statement &amp; Statement of Intent</span>
+              <span>May 2026</span>
             </div>
           </div>
-          <div className="cap-meta">
-            <div className="cap-meta-label">Statement of Intent</div>
-            <div className="cap-meta-date">May 2026</div>
+        </div>
+
+        {/* Purpose */}
+        <section className="cap-block cap-block-first">
+          <h2 className="cap-h2">Our Purpose</h2>
+          <p className="cap-lead">
+            Frntrw Foundation gives Pasifika and Māori athletes in South and West Auckland — aged 10 to 17 — the
+            structured pathway, professional coaching, and real access that the market keeps behind a paywall.
+            No athlete pays. No athlete misses out.
+          </p>
+        </section>
+
+        {/* Why we exist */}
+        <section className="cap-block">
+          <h2 className="cap-h2">Why We Exist</h2>
+          <div className="cap-why">
+            <div className="cap-why-text">
+              <p>
+                Structured youth development in Auckland costs families <strong>$24–$50 a week</strong> — between
+                <strong> $2,500 and $5,200 a year</strong> if you have two athletes in the system. For thousands of
+                Pasifika and Māori families, that price tag is the difference between participation and watching from
+                the sideline.
+              </p>
+              <p>
+                We exist to close that gap. Our programme delivers the same quality of coaching — with a more credible
+                pedigree than most paid academies offer — at zero cost to the athlete.
+              </p>
+            </div>
+            <div className="cap-why-compare">
+              <div className="cap-why-rate cap-why-market">
+                <div className="cap-why-rate-label">The market</div>
+                <div className="cap-why-rate-num">$24–$50</div>
+                <div className="cap-why-rate-note">per week, per athlete</div>
+              </div>
+              <div className="cap-why-rate cap-why-us">
+                <div className="cap-why-rate-label">Frntrw Foundation</div>
+                <div className="cap-why-rate-num">$0</div>
+                <div className="cap-why-rate-note">funded by sponsors &amp; grants</div>
+              </div>
+            </div>
           </div>
-        </header>
-
-        <div className="cap-rule" />
-
-        <section className="cap-block">
-          <h2 className="cap-h2">Purpose</h2>
-          <p>
-            Frntrw Foundation gives Pasifika and Māori athletes in Auckland, aged 10–17, the structured pathway, elite
-            coaching, and real access that too often sits behind a paywall — without leaving any athlete behind because
-            of cost.
-          </p>
         </section>
 
+        {/* What we do */}
         <section className="cap-block">
-          <h2 className="cap-h2">The Dual Mandate</h2>
-          <p>
-            A free community programme funded by grants and sponsorship, alongside a paid performance pathway that funds
-            the Foundation&apos;s growth.
-          </p>
-          <blockquote className="cap-pull">
-            The free community programme stays free. The paid pathway funds the Foundation&apos;s growth.
-          </blockquote>
-        </section>
-
-        <section className="cap-block">
-          <h2 className="cap-h2">Who We Are</h2>
-          <table className="cap-table">
-            <thead>
-              <tr>
-                <th>Role</th>
-                <th>Name</th>
-                <th>Background</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Founder &amp; Chair</td>
-                <td>Census Johnston</td>
-                <td>60-test Manu Samoa international, current Blues development coach</td>
-              </tr>
-              <tr>
-                <td>Trustee</td>
-                <td>Alex Matapo</td>
-                <td><em>To be confirmed</em></td>
-              </tr>
-              <tr>
-                <td>Independent Trustee</td>
-                <td><em>TBC</em></td>
-                <td>Independent voice — finance, legal, or community</td>
-              </tr>
-            </tbody>
-          </table>
-          <p className="cap-note">
-            Delivered by a volunteer team of 10 elite coaches, all current or recent provincial / national level.
-          </p>
-        </section>
-
-        <section className="cap-block">
-          <h2 className="cap-h2">What We Do</h2>
-          <div className="cap-pathways">
-            <div className="cap-pathway">
-              <div className="cap-pathway-tag">Foundation Programme · Free</div>
-              <ul>
-                <li>Ages 10–14</li>
-                <li>Open clinics, school programmes, holiday camps</li>
-                <li>Grant- and sponsor-funded</li>
-                <li>No athlete turned away</li>
+          <h2 className="cap-h2">What We Deliver</h2>
+          <div className="cap-deliver-grid">
+            <div className="cap-deliver-img">
+              <Image src="/images/lane-community.jpg" alt="Community programme in session" fill sizes="280px" style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="cap-deliver-body">
+              <div className="cap-deliver-tag">Free Community Programme</div>
+              <p>
+                Structured coaching for <strong>80+ athletes per term</strong> — open to every Auckland youth aged
+                10 to 17. No tryouts. No waitlists. No fees. Equipment and kit provided.
+              </p>
+              <ul className="cap-deliver-list">
+                <li>Group sessions led by ten coaches who have all played professionally</li>
+                <li>Technical skills, physical conditioning, mental resilience</li>
+                <li>Pasifika and Māori cultural values embedded throughout</li>
+                <li>Run across three clinic intakes per year and holiday camp programming</li>
               </ul>
             </div>
-            <div className="cap-pathway">
-              <div className="cap-pathway-tag">Performance Pathway · Paid</div>
-              <ul>
-                <li>Ages 15–17</li>
-                <li>Selected athletes, structured terms</li>
-                <li>$150–$250 per term — funds the Foundation</li>
-                <li>Elite coaching, exposure to scouts and clubs</li>
-              </ul>
-            </div>
           </div>
         </section>
 
+        {/* Stats strip */}
         <div className="cap-stats">
           {[
-            ['300+', 'Registrations'],
-            ['3', 'Clinics Delivered'],
-            ['10', 'Elite Coaches'],
-            ['60', 'Test Caps · Founder'],
+            ['300+', 'Athletes Registered'],
+            ['80+', 'Athletes Per Term'],
+            ['10', 'Professional Coaches'],
+            ['$0', 'Cost to Families'],
           ].map(([num, label]) => (
             <div key={label} className="cap-stat">
               <div className="cap-stat-num">{num}</div>
@@ -140,71 +141,103 @@ export default function CapabilityClient() {
       {/* PAGE 2 */}
       <section className="cap-page-2 cap-sheet">
         <header className="cap-header cap-header-mini">
-          <div className="cap-wordmark-mini">FRNTRW FOUNDATION · Statement of Intent</div>
+          <div className="cap-wordmark-mini">FRNTRW FOUNDATION · Capability Statement</div>
           <div className="cap-page-no">2 / 2</div>
         </header>
 
         <div className="cap-rule" />
 
+        {/* Founder */}
         <section className="cap-block">
-          <h2 className="cap-h2">Strategic Direction · 2026 – 2028</h2>
-          <ol className="cap-roadmap">
-            <li>
-              <strong>Year 1 (2026)</strong> — Charitable Trust registered. First $50K secured. Dual-entity structure
-              operational. Performance Pathway revenue: $12K.
-            </li>
-            <li>
-              <strong>Year 2 (2027)</strong> — 600+ registrations. Second Auckland region launched. $150K secured.
-              Performance Pathway revenue: $32K.
-            </li>
-            <li>
-              <strong>Year 3 (2028)</strong> — 1,000+ registrations. First Frntrw alumni in national age-group
-              representation. $300K+ secured. Performance Pathway revenue: $60K+.
-            </li>
-          </ol>
-        </section>
-
-        <section className="cap-block">
-          <h2 className="cap-h2">Entity Structure</h2>
-          <div className="cap-entities">
-            <div className="cap-entity">
-              <div className="cap-entity-tag">Now</div>
-              <div className="cap-entity-val">Frntrw Foundation Limited</div>
-              <div className="cap-entity-note">NZ company, Pasifika-owned, operating</div>
+          <h2 className="cap-h2">The Founder</h2>
+          <div className="cap-founder">
+            <div className="cap-founder-img">
+              <Image src="/images/board-census.jpg" alt="Census Johnston, Founder" fill sizes="180px" style={{ objectFit: 'cover', objectPosition: 'center 15%' }} />
             </div>
-            <div className="cap-entity">
-              <div className="cap-entity-tag">Next</div>
-              <div className="cap-entity-val">Frntrw Foundation Charitable Trust</div>
-              <div className="cap-entity-note">Charities Services NZ — registration in progress</div>
-            </div>
-            <div className="cap-entity">
-              <div className="cap-entity-tag">Model</div>
-              <div className="cap-entity-val">Two-entity structure</div>
-              <div className="cap-entity-note">Trust holds community-benefit mission · Ltd runs paid pathway · surplus flows to Trust</div>
+            <div className="cap-founder-body">
+              <div className="cap-founder-name">Census Johnston</div>
+              <div className="cap-founder-role">Founder &amp; Chair</div>
+              <p>
+                60-test Manu Samoa international, three Rugby World Cup campaigns, Heineken Cup winner with Toulouse,
+                and current development coach at the Blues. Census founded Frntrw Foundation in 2023 to deliver to
+                Auckland youth the access to elite coaching he never had growing up.
+              </p>
             </div>
           </div>
         </section>
 
+        {/* Governance + Entity */}
         <section className="cap-block">
-          <h2 className="cap-h2">How to Partner</h2>
+          <h2 className="cap-h2">Governance &amp; Structure</h2>
+          <div className="cap-gov-grid">
+            <div>
+              <div className="cap-gov-tag">Board</div>
+              <ul className="cap-gov-list">
+                <li><strong>Census Johnston</strong> — Founder &amp; Chair</li>
+                <li>Trustee — appointment pending</li>
+                <li>Independent Trustee — appointment pending</li>
+              </ul>
+            </div>
+            <div>
+              <div className="cap-gov-tag">Operating Entity</div>
+              <div className="cap-gov-val">Frntrw Foundation Limited</div>
+              <div className="cap-gov-note">NZ company, Pasifika-owned</div>
+            </div>
+            <div>
+              <div className="cap-gov-tag">Charitable Status</div>
+              <div className="cap-gov-val">Charitable Trust</div>
+              <div className="cap-gov-note">Registration in progress with Charities Services NZ</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Direction */}
+        <section className="cap-block">
+          <h2 className="cap-h2">Where We&apos;re Going</h2>
+          <ol className="cap-roadmap">
+            <li>
+              <strong>Now</strong> — Strengthen the programme foundations. Register the Charitable Trust, secure
+              recurring sponsor support, capture stories that show the work in motion.
+            </li>
+            <li>
+              <strong>Next</strong> — Expand reach across South and West Auckland. Deepen the partnership with North
+              Harbour Pasifika Hauora Collective. Open a clear pathway from grassroots into provincial and national
+              representation.
+            </li>
+            <li>
+              <strong>Beyond</strong> — Build the elite development lane for athletes ready for the next level.
+              Establish Frntrw as the Pasifika-led athletic development pipeline that funders, sponsors, and clubs
+              trust to deliver.
+            </li>
+          </ol>
+        </section>
+
+        {/* Partner */}
+        <section className="cap-block">
+          <h2 className="cap-h2">How to Back the Work</h2>
           <div className="cap-partners">
             <div className="cap-partner">
-              <div className="cap-partner-tag">Funders</div>
+              <div className="cap-partner-tag">For Funders</div>
               <p>
-                Grants for programme delivery, coaching stipends, equipment, and regional expansion. Quarterly reporting
-                and case study output for every funded programme.
+                We deliver structured programmes that the market won&apos;t fund — because they don&apos;t generate revenue.
+                Your grant pays for coaching delivery, equipment, kit, and the operational backbone that keeps the
+                programme free for every athlete who walks in.
               </p>
             </div>
             <div className="cap-partner">
-              <div className="cap-partner-tag">Corporate Sponsors</div>
+              <div className="cap-partner-tag">For Corporate Sponsors</div>
               <p>
-                Foundation Partner ($25K+), Programme Partner ($10K+), Activity Partner ($2.5K+). Brand visibility on
-                kit, at events, and on the platform.
+                Your brand sits alongside a Pasifika-led foundation building real outcomes for South and West Auckland
+                youth. Visibility on kit, at events, on our platform, and in the stories we tell. Tiers and packages
+                tailored to your scale — let&apos;s have the conversation.
               </p>
             </div>
             <div className="cap-partner">
-              <div className="cap-partner-tag">Individual Donors</div>
-              <p>Tax-deductible giving opens on Charitable Trust registration.</p>
+              <div className="cap-partner-tag">For Whānau &amp; Community</div>
+              <p>
+                Register an athlete. Volunteer your time. Share the work. The foundation belongs to the community it
+                serves — and the community is what keeps it going.
+              </p>
             </div>
           </div>
         </section>
@@ -212,19 +245,21 @@ export default function CapabilityClient() {
         <footer className="cap-footer">
           <div className="cap-contact">
             <div>
-              <strong>Census Johnston</strong> · Chair
+              <strong>General enquiries</strong>
               <br />
-              censusj@hotmail.com · 022 085 3545
+              hello@frntrwfoundation.org.nz
             </div>
             <div>
-              <strong>Romero Tagi</strong> · Strategy Partner (RTS)
+              <strong>Partnerships</strong>
               <br />
-              info@remedyintelligentsolutions.co.nz
+              partners@frntrwfoundation.org.nz
             </div>
             <div>
-              <strong>Website</strong>
+              <strong>Online</strong>
               <br />
               frntrwfoundation.org.nz
+              <br />
+              @frntrw_foundation
             </div>
           </div>
         </footer>
@@ -268,73 +303,77 @@ export default function CapabilityClient() {
           background: var(--cap-paper);
           max-width: 820px;
           margin: 0 auto 24px;
-          padding: 56px 64px;
+          padding: 0;
           box-shadow: 0 8px 32px rgba(0,0,0,0.08);
           min-height: 1080px;
           display: flex;
           flex-direction: column;
+          overflow: hidden;
         }
+        .cap-page-2 { padding: 56px 64px; }
 
-        .cap-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          margin-bottom: 22px;
+        /* Cover hero */
+        .cap-cover {
+          position: relative;
+          height: 320px;
+          width: 100%;
+          overflow: hidden;
         }
-        .cap-brand { display: flex; align-items: center; gap: 14px; }
-        .cap-wordmark {
+        .cap-cover-tint {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, rgba(13,13,11,0.35) 0%, rgba(13,13,11,0.78) 100%);
+        }
+        .cap-cover-content {
+          position: absolute;
+          inset: 0;
+          padding: 32px 48px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          color: #fff;
+        }
+        .cap-cover-brand { display: flex; align-items: center; gap: 14px; }
+        .cap-cover-wordmark { line-height: 1.1; }
+        .cap-cover-wordmark .cap-wordmark {
           font-family: 'Intramur', 'DM Sans', sans-serif;
           font-size: 22px;
           letter-spacing: 3px;
-          color: var(--cap-ink);
-          line-height: 1;
+          color: #fff;
         }
-        .cap-sub {
-          font-size: 10px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          color: var(--cap-muted);
-          margin-top: 6px;
-        }
-        .cap-meta { text-align: right; }
-        .cap-meta-label {
-          font-size: 10px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: var(--cap-gold);
-        }
-        .cap-meta-date {
-          font-size: 12px;
-          color: var(--cap-muted);
-          margin-top: 4px;
-        }
-
-        .cap-header-mini { align-items: center; margin-bottom: 16px; }
-        .cap-wordmark-mini {
+        .cap-cover-wordmark .cap-sub {
           font-size: 10px;
           letter-spacing: 2.5px;
           text-transform: uppercase;
-          color: var(--cap-muted);
+          color: var(--cap-gold);
+          margin-top: 6px;
         }
-        .cap-page-no {
-          font-size: 10px;
+        .cap-cover-title {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 44px;
+          font-weight: 500;
+          letter-spacing: -1px;
+          line-height: 1;
+          color: #fff;
+        }
+        .cap-cover-meta {
+          display: flex;
+          justify-content: space-between;
+          font-size: 10.5px;
           letter-spacing: 2px;
-          color: var(--cap-muted);
+          text-transform: uppercase;
+          color: rgba(255,255,255,0.7);
         }
 
-        .cap-rule {
-          height: 1px;
-          background: var(--cap-rule);
-          margin-bottom: 28px;
-        }
-
-        .cap-block { margin-bottom: 24px; }
+        .cap-block { margin: 0 64px 24px; }
+        .cap-block-first { margin-top: 36px; }
         .cap-block p {
           font-size: 13.5px;
           font-weight: 300;
           line-height: 1.7;
           color: rgba(13,13,11,0.78);
         }
+        .cap-block p + p { margin-top: 10px; }
         .cap-h2 {
           font-family: 'DM Sans', sans-serif;
           font-size: 11px;
@@ -342,60 +381,65 @@ export default function CapabilityClient() {
           text-transform: uppercase;
           color: var(--cap-gold);
           font-weight: 600;
-          margin-bottom: 10px;
+          margin-bottom: 12px;
+        }
+        .cap-lead {
+          font-size: 15.5px !important;
+          line-height: 1.65 !important;
+          color: var(--cap-ink) !important;
         }
 
-        .cap-pull {
-          font-size: 16px;
-          font-weight: 400;
-          font-style: italic;
-          line-height: 1.5;
-          color: var(--cap-ink);
-          padding: 14px 18px;
-          border-left: 2px solid var(--cap-gold);
-          margin: 14px 0 0;
-          background: rgba(201,168,76,0.06);
+        /* Why we exist */
+        .cap-why {
+          display: grid;
+          grid-template-columns: 1fr 220px;
+          gap: 28px;
+          align-items: stretch;
         }
-
-        .cap-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 8px;
+        .cap-why-compare {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          background: var(--cap-rule);
         }
-        .cap-table th, .cap-table td {
-          text-align: left;
-          padding: 8px 10px 8px 0;
-          font-size: 12.5px;
-          line-height: 1.5;
-          vertical-align: top;
-          border-bottom: 0.5px solid var(--cap-rule);
-        }
-        .cap-table th {
-          font-size: 10px;
+        .cap-why-rate { padding: 16px 18px; }
+        .cap-why-market { background: #f4f1ea; }
+        .cap-why-us { background: var(--cap-gold); }
+        .cap-why-rate-label {
+          font-size: 9.5px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: var(--cap-muted);
-          font-weight: 600;
-          padding-bottom: 6px;
+          color: rgba(13,13,11,0.6);
+          margin-bottom: 4px;
         }
-        .cap-note {
-          font-size: 11.5px !important;
-          font-style: italic;
-          color: var(--cap-muted) !important;
-          margin-top: 10px;
+        .cap-why-us .cap-why-rate-label { color: rgba(13,13,11,0.7); }
+        .cap-why-rate-num {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 1;
+          color: var(--cap-ink);
+          letter-spacing: -0.5px;
         }
-
-        .cap-pathways {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 14px;
+        .cap-why-rate-note {
+          font-size: 11px;
+          color: rgba(13,13,11,0.55);
           margin-top: 4px;
         }
-        .cap-pathway {
-          border: 0.5px solid var(--cap-rule);
-          padding: 16px 18px;
+
+        /* What we deliver */
+        .cap-deliver-grid {
+          display: grid;
+          grid-template-columns: 280px 1fr;
+          gap: 24px;
+          align-items: stretch;
         }
-        .cap-pathway-tag {
+        .cap-deliver-img {
+          position: relative;
+          min-height: 220px;
+          overflow: hidden;
+        }
+        .cap-deliver-tag {
           font-size: 10px;
           letter-spacing: 2px;
           text-transform: uppercase;
@@ -403,23 +447,24 @@ export default function CapabilityClient() {
           font-weight: 600;
           margin-bottom: 10px;
         }
-        .cap-pathway ul {
+        .cap-deliver-list {
           list-style: none;
           padding: 0;
-          margin: 0;
+          margin: 14px 0 0;
         }
-        .cap-pathway li {
+        .cap-deliver-list li {
           font-size: 12.5px;
           font-weight: 300;
           line-height: 1.7;
-          color: rgba(13,13,11,0.75);
-          padding-left: 14px;
+          color: rgba(13,13,11,0.78);
+          padding-left: 16px;
           position: relative;
+          margin-bottom: 4px;
         }
-        .cap-pathway li::before {
+        .cap-deliver-list li::before {
           content: '';
-          width: 4px;
-          height: 4px;
+          width: 5px;
+          height: 5px;
           background: var(--cap-gold);
           position: absolute;
           left: 0;
@@ -427,18 +472,20 @@ export default function CapabilityClient() {
           border-radius: 50%;
         }
 
+        /* Stats strip */
         .cap-stats {
-          margin-top: auto;
+          margin: auto 64px 56px;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 0;
-          border-top: 1px solid var(--cap-rule);
-          padding-top: 22px;
+          background: #f7f4ec;
+          border: 0.5px solid var(--cap-rule);
         }
-        .cap-stat { padding: 0 14px; border-left: 0.5px solid var(--cap-rule); }
-        .cap-stat:first-child { border-left: none; padding-left: 0; }
+        .cap-stat { padding: 22px 18px; border-left: 0.5px solid var(--cap-rule); }
+        .cap-stat:first-child { border-left: none; }
         .cap-stat-num {
-          font-size: 36px;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 32px;
           font-weight: 300;
           color: var(--cap-gold);
           line-height: 1;
@@ -449,9 +496,68 @@ export default function CapabilityClient() {
           letter-spacing: 2px;
           text-transform: uppercase;
           color: var(--cap-muted);
-          margin-top: 6px;
+          margin-top: 8px;
         }
 
+        /* Page 2 header */
+        .cap-header-mini { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .cap-wordmark-mini {
+          font-size: 10px;
+          letter-spacing: 2.5px;
+          text-transform: uppercase;
+          color: var(--cap-muted);
+        }
+        .cap-page-no { font-size: 10px; letter-spacing: 2px; color: var(--cap-muted); }
+        .cap-rule { height: 1px; background: var(--cap-rule); margin-bottom: 22px; }
+
+        /* Founder */
+        .cap-founder { display: grid; grid-template-columns: 180px 1fr; gap: 22px; align-items: center; }
+        .cap-founder-img {
+          position: relative;
+          width: 180px;
+          height: 180px;
+          overflow: hidden;
+          flex-shrink: 0;
+        }
+        .cap-founder-name { font-size: 18px; font-weight: 600; color: var(--cap-ink); }
+        .cap-founder-role {
+          font-size: 10px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: var(--cap-gold);
+          margin: 4px 0 12px;
+        }
+
+        /* Governance */
+        .cap-gov-grid {
+          display: grid;
+          grid-template-columns: 1.4fr 1fr 1fr;
+          gap: 18px;
+          padding: 18px 0;
+          border-top: 0.5px solid var(--cap-rule);
+          border-bottom: 0.5px solid var(--cap-rule);
+        }
+        .cap-gov-tag {
+          font-size: 9.5px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: var(--cap-gold);
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .cap-gov-list { list-style: none; padding: 0; margin: 0; }
+        .cap-gov-list li {
+          font-size: 12.5px;
+          font-weight: 300;
+          line-height: 1.65;
+          color: rgba(13,13,11,0.78);
+          padding: 4px 0;
+        }
+        .cap-gov-list strong { color: var(--cap-ink); font-weight: 600; }
+        .cap-gov-val { font-size: 14px; font-weight: 500; color: var(--cap-ink); line-height: 1.35; }
+        .cap-gov-note { font-size: 11px; color: var(--cap-muted); margin-top: 4px; line-height: 1.5; }
+
+        /* Roadmap */
         .cap-roadmap {
           list-style: none;
           padding: 0;
@@ -463,66 +569,29 @@ export default function CapabilityClient() {
           font-weight: 300;
           line-height: 1.7;
           color: rgba(13,13,11,0.78);
-          padding-left: 36px;
+          padding-left: 96px;
           position: relative;
-          margin-bottom: 12px;
-          counter-increment: roadmap;
+          margin-bottom: 14px;
+          min-height: 22px;
         }
         .cap-roadmap li::before {
-          content: counter(roadmap);
+          content: attr(data-marker);
+        }
+        .cap-roadmap li strong {
           position: absolute;
           left: 0;
-          top: -2px;
-          width: 24px;
-          height: 24px;
-          background: var(--cap-gold);
-          color: #fff;
-          font-size: 11px;
-          font-weight: 600;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .cap-roadmap strong { color: var(--cap-ink); font-weight: 600; }
-
-        .cap-entities {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 0;
-          border: 0.5px solid var(--cap-rule);
-        }
-        .cap-entity { padding: 14px 16px; border-left: 0.5px solid var(--cap-rule); }
-        .cap-entity:first-child { border-left: none; }
-        .cap-entity-tag {
-          font-size: 9.5px;
+          top: 0;
+          width: 80px;
+          font-size: 10px;
           letter-spacing: 2px;
           text-transform: uppercase;
           color: var(--cap-gold);
           font-weight: 600;
-          margin-bottom: 6px;
-        }
-        .cap-entity-val {
-          font-size: 13px;
-          font-weight: 500;
-          color: var(--cap-ink);
-          line-height: 1.35;
-        }
-        .cap-entity-note {
-          font-size: 11px;
-          color: var(--cap-muted);
-          margin-top: 4px;
-          line-height: 1.5;
         }
 
-        .cap-partners {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 14px;
-        }
-        .cap-partner {
-          border: 0.5px solid var(--cap-rule);
-          padding: 16px 18px;
-        }
+        /* Partners */
+        .cap-partners { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+        .cap-partner { border: 0.5px solid var(--cap-rule); padding: 18px 20px; }
         .cap-partner-tag {
           font-size: 10px;
           letter-spacing: 2px;
@@ -531,42 +600,40 @@ export default function CapabilityClient() {
           font-weight: 600;
           margin-bottom: 10px;
         }
-        .cap-partner p {
-          font-size: 12px !important;
-          line-height: 1.65 !important;
-        }
+        .cap-partner p { font-size: 12px !important; line-height: 1.65 !important; }
 
-        .cap-footer {
-          margin-top: auto;
-          padding-top: 22px;
-          border-top: 1px solid var(--cap-rule);
-        }
-        .cap-contact {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 18px;
-          font-size: 11.5px;
-          line-height: 1.7;
-          color: var(--cap-muted);
-        }
+        /* Footer */
+        .cap-footer { margin-top: auto; padding-top: 22px; border-top: 1px solid var(--cap-rule); }
+        .cap-contact { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; font-size: 11.5px; line-height: 1.7; color: var(--cap-muted); }
         .cap-contact strong { color: var(--cap-ink); font-weight: 600; }
 
-        /* Mobile screen view */
+        /* Mobile */
         @media (max-width: 720px) {
-          .cap-sheet { padding: 32px 24px; min-height: 0; }
-          .cap-header { flex-direction: column; align-items: flex-start; gap: 12px; }
-          .cap-meta { text-align: left; }
-          .cap-pathways, .cap-entities, .cap-partners, .cap-contact { grid-template-columns: 1fr !important; }
-          .cap-entity { border-left: none !important; border-top: 0.5px solid var(--cap-rule); }
-          .cap-entity:first-child { border-top: none; }
-          .cap-stats { grid-template-columns: 1fr 1fr; gap: 16px 0; }
+          .cap-sheet { min-height: 0; }
+          .cap-page-2 { padding: 32px 24px; }
+          .cap-cover { height: 240px; }
+          .cap-cover-content { padding: 24px 28px; }
+          .cap-cover-title { font-size: 32px; }
+          .cap-block { margin: 0 24px 24px; }
+          .cap-stats { margin: auto 24px 32px; grid-template-columns: 1fr 1fr; }
+          .cap-stat { border-left: none; border-top: 0.5px solid var(--cap-rule); }
+          .cap-stat:nth-child(-n+2) { border-top: none; }
+          .cap-stat:nth-child(2n) { border-left: 0.5px solid var(--cap-rule); }
+          .cap-why { grid-template-columns: 1fr; }
+          .cap-why-compare { flex-direction: row; }
+          .cap-why-rate { flex: 1; }
+          .cap-deliver-grid { grid-template-columns: 1fr; }
+          .cap-deliver-img { min-height: 200px; }
+          .cap-founder { grid-template-columns: 1fr; text-align: center; }
+          .cap-founder-img { margin: 0 auto; width: 160px; height: 160px; }
+          .cap-gov-grid, .cap-partners, .cap-contact { grid-template-columns: 1fr !important; }
         }
 
         /* Print: clean A4 PDF */
         @media print {
           @page {
             size: A4;
-            margin: 14mm 12mm;
+            margin: 0;
           }
           body { background: #fff !important; }
           .cap-page { background: #fff; padding: 0; }
@@ -575,11 +642,14 @@ export default function CapabilityClient() {
             box-shadow: none;
             margin: 0;
             padding: 0;
-            min-height: 0;
+            min-height: 297mm;
             max-width: 100%;
             page-break-after: always;
           }
+          .cap-page-2 { padding: 14mm 14mm; }
           .cap-sheet:last-of-type { page-break-after: auto; }
+          .cap-block { margin: 0 14mm 16px; }
+          .cap-stats { margin: auto 14mm 14mm; }
         }
       `}</style>
     </main>
