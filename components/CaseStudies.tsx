@@ -139,52 +139,14 @@ export default function CaseStudies() {
         ))}
       </div>
 
-      <div
-        className="cs-capability"
-        style={{
-          marginTop: 56,
-          padding: '52px 60px',
-          background: 'linear-gradient(135deg, rgba(201,168,76,0.10) 0%, rgba(201,168,76,0.02) 100%)',
-          border: '0.5px solid var(--border)',
-          display: 'grid',
-          gridTemplateColumns: '1fr auto',
-          gap: 48,
-          alignItems: 'center',
-        }}
-      >
-        <div>
-          <div style={{ fontSize: 10, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--gold)', marginBottom: 14 }}>
-            Capability Statement · Statement of Intent
-          </div>
-          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 30, fontWeight: 500, lineHeight: 1.2, color: 'var(--white)', marginBottom: 14, letterSpacing: -0.5 }}>
-            Who we are. What we do. Where we&apos;re going.
-          </div>
-          <p style={{ fontSize: 14, fontWeight: 300, lineHeight: 1.7, color: 'rgba(245,243,238,0.6)', maxWidth: 580 }}>
-            A two-page brief for funders, corporate partners, and whānau — purpose, governance, the programme,
-            and how to back the work.
-          </p>
-        </div>
-
-        <div className="cs-cta-stack" style={{ display: 'flex', flexDirection: 'column', gap: 10, minWidth: 240 }}>
-          <a href="/capability" className="btn-gold" style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>
-            Read the Statement
-          </a>
-          <a href="/capability?print=1" className="btn-ghost" style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>
-            Download as PDF
-          </a>
-        </div>
-      </div>
-
       <style>{`
         .cs-tile:hover .cs-tile-img { transform: scale(1.04); }
         @media (max-width: 968px) {
           .cs-grid { grid-template-columns: 1fr 1fr !important; }
-          .cs-capability { grid-template-columns: 1fr !important; padding: 40px 36px !important; gap: 28px !important; }
         }
         @media (max-width: 640px) {
           .cs-grid { grid-template-columns: 1fr !important; }
           .cs-tile { min-height: 380px !important; }
-          .cs-cta-stack { min-width: 0 !important; width: 100% !important; }
         }
       `}</style>
     </section>

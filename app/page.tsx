@@ -10,6 +10,7 @@ import CaseStudies from '@/components/CaseStudies'
 import GroupPhoto from '@/components/GroupPhoto'
 import Outdoor from '@/components/Outdoor'
 import SponsorsCarousel from '@/components/SponsorsCarousel'
+import CapabilityFeature from '@/components/CapabilityFeature'
 import PartnerSection from '@/components/PartnerSection'
 import Register from '@/components/Register'
 import Governance from '@/components/Governance'
@@ -32,6 +33,7 @@ export default function Home() {
         <Register />
         <Outdoor />
         <SponsorsCarousel />
+        <CapabilityFeature />
         <PartnerSection />
         <Governance />
       </main>
