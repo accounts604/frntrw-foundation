@@ -7,23 +7,17 @@ const stories = [
   {
     img: '/images/outdoor.jpg',
     pillar: 'Grassroots to High Performance',
-    title: 'Three days. One field. A generation of access.',
-    teaser: 'Holiday camp story — captured live with athletes, coaches, and whānau.',
-    meta: 'Story coming soon',
+    title: 'Three days.\nOne field.\nA generation of access.',
   },
   {
     img: '/images/group-photo.jpg',
     pillar: 'Community Focused',
-    title: 'Standing with North Harbour Pasifika Hauora.',
-    teaser: 'How a community partnership unlocked reach, cultural infrastructure, and shared purpose.',
-    meta: 'Story coming soon',
+    title: 'Standing with\nNth Harbour Pasifika\nHauora.',
   },
   {
     img: '/images/lane-community.jpg',
     pillar: 'Mentorship & Leadership',
     title: 'The coaches who showed up before the funding did.',
-    teaser: 'Ten professional coaches. Zero salaries. Every athlete coached at international standard.',
-    meta: 'Story coming soon',
   },
 ]
 
@@ -55,7 +49,7 @@ export default function CaseStudies() {
         </p>
       </div>
 
-      {/* Photo tile grid */}
+      {/* Image-poster tile grid */}
       <div
         className="cs-grid"
         style={{
@@ -72,17 +66,14 @@ export default function CaseStudies() {
             className="cs-tile"
             style={{
               position: 'relative',
-              minHeight: 420,
+              minHeight: 460,
               overflow: 'hidden',
               background: 'var(--charcoal)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'flex-end',
             }}
           >
             <Image
               src={s.img}
-              alt={s.title}
+              alt={s.title.replace(/\n/g, ' ')}
               fill
               sizes="(max-width:640px) 100vw, (max-width:968px) 50vw, 33vw"
               style={{
@@ -96,7 +87,8 @@ export default function CaseStudies() {
               style={{
                 position: 'absolute',
                 inset: 0,
-                background: 'linear-gradient(to top, rgba(13,13,11,0.95) 0%, rgba(13,13,11,0.55) 55%, rgba(13,13,11,0.15) 100%)',
+                background:
+                  'linear-gradient(to top, rgba(13,13,11,0.92) 0%, rgba(13,13,11,0.4) 50%, rgba(13,13,11,0.15) 100%)',
               }}
             />
 
@@ -114,55 +106,33 @@ export default function CaseStudies() {
                 border: '0.5px solid rgba(201,168,76,0.4)',
                 padding: '5px 11px',
                 backdropFilter: 'blur(6px)',
+                zIndex: 2,
               }}
             >
               {s.pillar}
             </div>
 
-            {/* "Coming soon" pill — top right */}
-            <div
+            {/* Title — overlaid bottom-left, large */}
+            <h3
+              className="cs-tile-title"
               style={{
                 position: 'absolute',
-                top: 24,
-                right: 24,
-                fontSize: 9,
-                letterSpacing: 2,
-                textTransform: 'uppercase',
-                color: 'rgba(245,243,238,0.65)',
-                background: 'rgba(13,13,11,0.6)',
-                padding: '5px 11px',
-                backdropFilter: 'blur(6px)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 7,
+                left: 28,
+                right: 28,
+                bottom: 28,
+                margin: 0,
+                fontFamily: "'DM Sans',sans-serif",
+                fontSize: 'clamp(26px, 2.4vw, 34px)',
+                fontWeight: 500,
+                lineHeight: 1.05,
+                letterSpacing: -0.6,
+                color: 'var(--white)',
+                whiteSpace: 'pre-line',
+                zIndex: 2,
               }}
             >
-              <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--gold)', display: 'inline-block' }} />
-              In capture
-            </div>
-
-            {/* Body copy bottom-left */}
-            <div style={{ position: 'relative', padding: '32px 28px 30px', zIndex: 2 }}>
-              <div
-                style={{
-                  fontFamily: "'DM Sans',sans-serif",
-                  fontSize: 22,
-                  fontWeight: 500,
-                  lineHeight: 1.22,
-                  color: 'var(--white)',
-                  marginBottom: 12,
-                  letterSpacing: -0.3,
-                }}
-              >
-                {s.title}
-              </div>
-              <p style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.65, color: 'rgba(245,243,238,0.7)', marginBottom: 18 }}>
-                {s.teaser}
-              </p>
-              <div style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(245,243,238,0.45)', paddingTop: 14, borderTop: '0.5px solid rgba(245,243,238,0.18)' }}>
-                {s.meta}
-              </div>
-            </div>
+              {s.title}
+            </h3>
           </article>
         ))}
       </div>
