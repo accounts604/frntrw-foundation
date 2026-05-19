@@ -49,7 +49,7 @@ export default function CapabilityClient() {
               </div>
             </div>
             <div className="cap-cover-title">
-              Built for Frontrow Athletes.
+              Wellbeing through sport.<br />Access without barriers.
             </div>
             <div className="cap-cover-meta">
               <span>Capability Statement &amp; Statement of Intent</span>
@@ -58,81 +58,79 @@ export default function CapabilityClient() {
           </div>
         </div>
 
-        {/* Purpose */}
+        {/* Outcome we deliver */}
         <section className="cap-block cap-block-first">
-          <h2 className="cap-h2">Our Purpose</h2>
+          <h2 className="cap-h2">The Outcome We Deliver</h2>
           <p className="cap-lead">
-            Frntrw Foundation gives Pasifika and Māori athletes in South and West Auckland — aged 10 to 17 — the
-            structured pathway, professional coaching, and real access that the market keeps behind a paywall.
-            No athlete pays. No athlete misses out.
+            Frntrw Foundation lifts <strong>physical activity, pastoral wellbeing, and cultural identity</strong>{' '}
+            for Pasifika and Māori young people aged 10 to 17 — communities historically underserved by Auckland&apos;s
+            paid youth-sport market. We close the equity gap that keeps minority whānau on the sideline.
           </p>
         </section>
 
-        {/* Why we exist */}
+        {/* The need */}
         <section className="cap-block">
-          <h2 className="cap-h2">Why We Exist</h2>
+          <h2 className="cap-h2">The Need We Address</h2>
           <div className="cap-why">
             <div className="cap-why-text">
               <p>
-                Structured youth development in Auckland costs families <strong>$24–$50 a week</strong> — between
-                <strong> $2,500 and $5,200 a year</strong> for a household with two athletes. For thousands of
-                Pasifika and Māori families, that price tag is the difference between participation and watching
-                from the sideline.
+                Structured youth athletic development in Auckland costs whānau <strong>$24–$50 a week</strong> —
+                between <strong>$2,500 and $5,200 a year</strong> for a household with two young people. For
+                Pasifika and Māori families in South and West Auckland, that price tag is the difference between
+                participation and exclusion from a primary protective factor in youth wellbeing.
               </p>
               <p>
-                We exist to close that gap. Our programme delivers the same quality of coaching — with a more
-                credible pedigree than most paid academies offer — at zero cost to the athlete.
+                The result is a participation gap that compounds across physical health, mental wellbeing,
+                identity, and pathway access — concentrated in the communities that already face the steepest
+                outcome inequities. Frntrw exists to remove that financial barrier entirely.
               </p>
             </div>
             <div className="cap-why-compare">
               <div className="cap-why-rate cap-why-market">
-                <div className="cap-why-rate-label">The market</div>
+                <div className="cap-why-rate-label">Market access</div>
                 <div className="cap-why-rate-num">$24–$50</div>
                 <div className="cap-why-rate-note">per week, per athlete</div>
               </div>
               <div className="cap-why-rate cap-why-us">
-                <div className="cap-why-rate-label">Frntrw Foundation</div>
+                <div className="cap-why-rate-label">Frntrw access</div>
                 <div className="cap-why-rate-num">$0</div>
-                <div className="cap-why-rate-note">funded by sponsors &amp; grants</div>
+                <div className="cap-why-rate-note">equitable access for all</div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Journey */}
+        {/* Outcomes funded */}
         <section className="cap-block">
-          <h2 className="cap-h2">Our Journey</h2>
-          <div className="cap-journey">
-            <div className="cap-journey-item">
-              <div className="cap-journey-year">2023</div>
-              <div className="cap-journey-body">
-                <strong>Founded</strong> by Census Johnston with a single-purpose mandate: give Auckland youth the
-                access to elite coaching he never had growing up. First clinics delivered before any formal funding
-                was in place.
-              </div>
+          <h2 className="cap-h2">Outcomes Your Funding Supports</h2>
+          <div className="cap-outcomes">
+            <div className="cap-outcome">
+              <div className="cap-outcome-tag">Physical Wellbeing</div>
+              <p>
+                Sustained, structured physical activity for 80+ young Pasifika and Māori people per term —
+                addressing the activity-inequity gap that drives long-term health outcomes for minority communities.
+              </p>
             </div>
-            <div className="cap-journey-item">
-              <div className="cap-journey-year">2023–2025</div>
-              <div className="cap-journey-body">
-                <strong>Proof of demand.</strong> Three clinic intakes delivered. 300+ athletes registered. A ten-strong
-                team of coaches — every one a professional player — assembled and operating on a volunteer basis.
-              </div>
+            <div className="cap-outcome">
+              <div className="cap-outcome-tag">Pastoral Care &amp; Mentorship</div>
+              <p>
+                Wraparound mentorship from Pasifika coaches who have lived the pathway — a culturally-anchored
+                model of pastoral support shown to build resilience, confidence, and protective factors in youth.
+              </p>
             </div>
-            <div className="cap-journey-item">
-              <div className="cap-journey-year">2026</div>
-              <div className="cap-journey-body">
-                <strong>Foundation formalising.</strong> Frntrw Foundation Limited registered. Charitable Trust
-                registration in progress with Charities Services NZ. Platform launched at frntrwfoundation.org.nz.
-                Sponsor and grant pipeline opening.
-              </div>
+            <div className="cap-outcome">
+              <div className="cap-outcome-tag">Cultural Identity</div>
+              <p>
+                Pasifika and Māori values embedded in every session — collective strength, cultural pride, service.
+                Identity reinforcement that supports mental wellbeing and whānau cohesion.
+              </p>
             </div>
-            <div className="cap-journey-item">
-              <div className="cap-journey-year">Beyond</div>
-              <div className="cap-journey-body">
-                <strong>Pasifika-led pipeline.</strong> Expanded reach across South and West Auckland. Recurring
-                sponsor base. Standing partnerships with provincial unions and clubs. The programme stays free as
-                it scales.
-              </div>
+            <div className="cap-outcome">
+              <div className="cap-outcome-tag">Pathway Equity</div>
+              <p>
+                Affordable, accessible entry to a development pipeline that the market has gated by household
+                income. Every athlete who walks in gets the same standard of coaching as those in paid academies.
+              </p>
             </div>
           </div>
         </section>
@@ -140,14 +138,14 @@ export default function CapabilityClient() {
         {/* Stats strip */}
         <div className="cap-stats">
           {[
-            ['300+', 'Athletes Registered'],
-            ['80+', 'Athletes Per Term'],
-            ['10', 'Professional Coaches'],
-            ['$0', 'Cost to Families'],
+            ['300+', 'Young People Reached'],
+            ['80+', 'Active Per Term'],
+            ['100%', 'Pasifika &amp; Māori-led'],
+            ['$0', 'Cost to Whānau'],
           ].map(([num, label]) => (
             <div key={label} className="cap-stat">
               <div className="cap-stat-num">{num}</div>
-              <div className="cap-stat-label">{label}</div>
+              <div className="cap-stat-label" dangerouslySetInnerHTML={{ __html: label }} />
             </div>
           ))}
         </div>
@@ -161,9 +159,24 @@ export default function CapabilityClient() {
         </header>
         <div className="cap-rule" />
 
-        {/* What we deliver */}
+        {/* The Cohort We Serve */}
         <section className="cap-block-padded">
-          <h2 className="cap-h2">What We Deliver</h2>
+          <h2 className="cap-h2">The Cohort We Serve</h2>
+          <p>
+            Pasifika and Māori young people aged 10 to 17 living in South and West Auckland — wards that consistently
+            rank among Aotearoa&apos;s highest deprivation deciles and lowest youth-sport participation rates.
+            Households in these communities carry above-average barriers to structured physical activity: cost,
+            transport, equipment access, and limited culturally-relevant programmes.
+          </p>
+          <p>
+            Our entry criteria is intentionally none: no tryouts, no waitlists, no fees, no kit to bring. The
+            programme meets young people where they already are, on the terms that whānau can actually accept.
+          </p>
+        </section>
+
+        {/* How outcomes are delivered */}
+        <section className="cap-block-padded">
+          <h2 className="cap-h2">How Outcomes Are Delivered</h2>
           <div className="cap-deliver-grid">
             <div className="cap-deliver-img">
               <Image src="/images/lane-community.jpg" alt="Community programme in session" fill sizes="280px" style={{ objectFit: 'cover' }} />
@@ -171,14 +184,15 @@ export default function CapabilityClient() {
             <div className="cap-deliver-body">
               <div className="cap-deliver-tag">Free Community Programme</div>
               <p>
-                Structured coaching for <strong>80+ athletes per term</strong> — open to every Auckland youth aged
-                10 to 17. No tryouts. No waitlists. No fees. Equipment and kit provided.
+                Three clinic intakes per year plus holiday camp programming. Each cycle: 80+ young people in regular,
+                structured physical activity, supported by ten current and recent professional players operating on a
+                volunteer basis.
               </p>
               <ul className="cap-deliver-list">
-                <li>Group sessions led by ten coaches who have all played professionally</li>
-                <li>Technical skills, physical conditioning, mental resilience</li>
-                <li>Pasifika and Māori cultural values embedded throughout</li>
-                <li>Three clinic intakes per year, plus holiday camp programming</li>
+                <li>Regular physical activity at a professional coaching standard</li>
+                <li>Cultural identity and values woven through every session</li>
+                <li>Pastoral mentorship from coaches who reflect the community</li>
+                <li>Equipment, kit, and venue provided — no household contribution</li>
               </ul>
             </div>
           </div>
@@ -186,7 +200,7 @@ export default function CapabilityClient() {
 
         {/* Founder */}
         <section className="cap-block-padded">
-          <h2 className="cap-h2">The Founder</h2>
+          <h2 className="cap-h2">Cultural Leadership</h2>
           <div className="cap-founder">
             <div className="cap-founder-img">
               <Image src="/images/board-census.jpg" alt="Census Johnston, Founder" fill sizes="180px" style={{ objectFit: 'cover', objectPosition: 'center 15%' }} />
@@ -199,55 +213,44 @@ export default function CapabilityClient() {
                 Currently development coach at the Blues.
               </p>
               <p>
-                Census founded Frntrw Foundation in 2023 to deliver to Auckland youth the access to elite coaching
-                he never had growing up — and to anchor the programme in Pasifika and Māori values: collective
-                strength, cultural pride, service.
+                A Pasifika sport leader who lived the access gap he&apos;s now closing. Census founded Frntrw to
+                deliver to Auckland Pasifika and Māori youth the structured access and pastoral care that the market
+                kept out of reach for his generation.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Coaching Team */}
+        {/* Operating discipline */}
         <section className="cap-block-padded">
-          <h2 className="cap-h2">The Coaching Team</h2>
-          <p>
-            Ten coaches. Every one a current or recent professional player. All operating on a volunteer basis —
-            they show up because they believe the next generation of Auckland athletes deserves access to the real
-            thing. Coaching across multiple codes, with cross-discipline expertise in conditioning, mental
-            performance, and leadership.
-          </p>
-        </section>
-
-        {/* How We Operate */}
-        <section className="cap-block-padded">
-          <h2 className="cap-h2">How We Operate</h2>
+          <h2 className="cap-h2">Operating Discipline</h2>
           <div className="cap-operate">
-            <div className="cap-operate-item">
-              <div className="cap-operate-tag">Programme Cycle</div>
-              <p>
-                Three clinic intakes per year, plus holiday camps. Each cycle: athlete registration, coach-led group
-                sessions, mid-term progress review, end-of-term whānau day.
-              </p>
-            </div>
             <div className="cap-operate-item">
               <div className="cap-operate-tag">Safeguarding</div>
               <p>
-                All coaches police-vetted before programme delivery. Programme run in line with NZ youth-sport
-                safeguarding standards. Athlete welfare reviewed every cycle.
+                All coaches police-vetted before programme delivery. Operations align with NZ youth-sport
+                safeguarding standards. Athlete welfare and consent reviewed every cycle.
               </p>
             </div>
             <div className="cap-operate-item">
-              <div className="cap-operate-tag">Funder Reporting</div>
+              <div className="cap-operate-tag">Outcome Reporting</div>
               <p>
-                Every funded programme receives quarterly reporting — athlete numbers, sessions delivered, programme
-                outcomes, and a financial summary of how funds were applied.
+                Every funded programme receives quarterly reporting — participation numbers, sessions delivered,
+                wellbeing outcomes, and transparent financial accounting of funds applied.
               </p>
             </div>
             <div className="cap-operate-item">
-              <div className="cap-operate-tag">Story &amp; Impact Capture</div>
+              <div className="cap-operate-tag">Impact Capture</div>
               <p>
-                Photo and story capture built into the platform — every clinic, camp, and partnership generates
-                content for funders and the community. Athletes are featured only with whānau consent.
+                Photo and story documentation built into the programme — every clinic, camp, and partnership
+                generates evidence of impact. Featured only with whānau consent.
+              </p>
+            </div>
+            <div className="cap-operate-item">
+              <div className="cap-operate-tag">Financial Governance</div>
+              <p>
+                Funds flow through the Charitable Trust, ringfenced for programme delivery. Companies Office and
+                Charities Services filings ensure full transparency and accountability.
               </p>
             </div>
           </div>
@@ -264,31 +267,31 @@ export default function CapabilityClient() {
 
         {/* Governance & Structure */}
         <section className="cap-block-padded">
-          <h2 className="cap-h2">Governance &amp; Structure</h2>
+          <h2 className="cap-h2">Governance &amp; Financial Structure</h2>
 
           <div className="cap-gov-entities">
             <div className="cap-gov-entity">
               <div className="cap-gov-tag">Operating Entity</div>
               <div className="cap-gov-val">Frntrw Foundation Limited</div>
               <div className="cap-gov-note">
-                Registered NZ company, Pasifika-owned. Holds operational contracts, manages day-to-day delivery.
+                Registered NZ company, Pasifika-owned. Holds operational contracts and manages day-to-day delivery.
               </div>
             </div>
             <div className="cap-gov-entity">
               <div className="cap-gov-tag">Charitable Status</div>
               <div className="cap-gov-val">Frntrw Foundation Charitable Trust</div>
               <div className="cap-gov-note">
-                Registration in progress with Charities Services NZ. Will hold the community-benefit mission, receive
-                grants and donations, and apply tax-deductible status to giving.
+                Registration in progress with Charities Services NZ. Holds the community-benefit mission, receives
+                grants and donations, applies tax-deductible status to giving.
               </div>
             </div>
           </div>
 
           <p className="cap-gov-flow">
-            <strong>How funds flow:</strong> Grants and donations are received by the Charitable Trust. The Trust
-            directs programme funding to Frntrw Foundation Limited as the delivery entity. Surplus from any
-            commercial activity flows back to the Trust. This is the standard two-entity structure used by NZ
-            foundations balancing community access with sustainable operations.
+            <strong>How funding flows:</strong> Grants and donations are received by the Charitable Trust and
+            ringfenced for programme delivery. The Trust directs funds to Frntrw Foundation Limited as delivery
+            entity. Any surplus from commercial activity returns to the Trust. This is the standard two-entity
+            structure used by NZ foundations balancing community benefit with operational sustainability.
           </p>
 
           <div className="cap-gov-board">
@@ -300,37 +303,37 @@ export default function CapabilityClient() {
             </ul>
             <div className="cap-gov-note cap-gov-note-pad">
               Independent trustee appointment confirmed prior to Charitable Trust registration, satisfying IRD
-              independence requirements.
+              independence requirements and ensuring impartial oversight of community-benefit decisions.
             </div>
           </div>
         </section>
 
-        {/* How to Back the Work */}
+        {/* Why partner */}
         <section className="cap-block-padded">
-          <h2 className="cap-h2">How to Back the Work</h2>
+          <h2 className="cap-h2">Why Partner With Us</h2>
           <div className="cap-partners">
             <div className="cap-partner">
               <div className="cap-partner-tag">For Funders</div>
               <p>
-                We deliver structured programmes the market won&apos;t fund — because they don&apos;t generate
-                revenue. Your grant pays for coaching delivery, equipment, kit, and the operational backbone that
-                keeps the programme free for every athlete who walks in. Quarterly reporting on every funded
-                programme.
+                Your investment directly funds measurable outcomes for underserved Pasifika and Māori youth:
+                physical activity participation, pastoral wellbeing, cultural identity, and equitable pathway
+                access. Quarterly reporting on every funded programme — participation, outcomes, and
+                ringfenced financial accounting.
               </p>
             </div>
             <div className="cap-partner">
               <div className="cap-partner-tag">For Corporate Sponsors</div>
               <p>
-                Your brand sits alongside a Pasifika-led foundation building real outcomes for South and West
-                Auckland youth. Visibility on kit, at events, on the platform, and in the stories we tell. Tailored
-                to your scale — let&apos;s have the conversation.
+                Brand alignment with a Pasifika-led foundation delivering tangible wellbeing and equity outcomes
+                for South and West Auckland youth. Authentic community association, measurable impact reporting,
+                and visibility tailored to your CSR objectives.
               </p>
             </div>
             <div className="cap-partner">
               <div className="cap-partner-tag">For Whānau &amp; Community</div>
               <p>
-                Register an athlete. Volunteer your time. Share the work. The foundation belongs to the community
-                it serves — and the community is what keeps it going.
+                Register a young person. Volunteer your time. Share the work. The foundation belongs to the
+                community it serves — and the community is what keeps it going.
               </p>
             </div>
           </div>
@@ -444,10 +447,10 @@ export default function CapabilityClient() {
         }
         .cap-cover-title {
           font-family: 'DM Sans', sans-serif;
-          font-size: 42px;
+          font-size: 38px;
           font-weight: 500;
           letter-spacing: -1px;
-          line-height: 1;
+          line-height: 1.05;
           color: #fff;
         }
         .cap-cover-meta {
@@ -486,7 +489,7 @@ export default function CapabilityClient() {
           color: var(--cap-ink) !important;
         }
 
-        /* Why we exist */
+        /* Why */
         .cap-why {
           display: grid;
           grid-template-columns: 1fr 200px;
@@ -524,34 +527,26 @@ export default function CapabilityClient() {
           margin-top: 4px;
         }
 
-        /* Journey */
-        .cap-journey {
+        /* Outcomes grid */
+        .cap-outcomes {
           display: grid;
-          grid-template-columns: 110px 1fr;
-          gap: 0;
-          border-top: 0.5px solid var(--cap-rule);
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
         }
-        .cap-journey-item {
-          display: contents;
+        .cap-outcome {
+          padding: 14px 16px;
+          background: #fafaf6;
+          border-left: 2px solid var(--cap-gold);
         }
-        .cap-journey-year {
-          padding: 12px 14px 12px 0;
+        .cap-outcome-tag {
           font-size: 10px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: var(--cap-gold);
+          color: var(--cap-ink);
           font-weight: 600;
-          border-bottom: 0.5px solid var(--cap-rule);
+          margin-bottom: 6px;
         }
-        .cap-journey-body {
-          padding: 12px 0;
-          font-size: 12.5px;
-          font-weight: 300;
-          line-height: 1.65;
-          color: rgba(13,13,11,0.78);
-          border-bottom: 0.5px solid var(--cap-rule);
-        }
-        .cap-journey-body strong { color: var(--cap-ink); font-weight: 600; }
+        .cap-outcome p { font-size: 11.5px !important; line-height: 1.6 !important; }
 
         /* What we deliver */
         .cap-deliver-grid {
@@ -611,7 +606,7 @@ export default function CapabilityClient() {
         .cap-stat:first-child { border-left: none; }
         .cap-stat-num {
           font-family: 'DM Sans', sans-serif;
-          font-size: 28px;
+          font-size: 26px;
           font-weight: 300;
           color: var(--cap-gold);
           line-height: 1;
@@ -623,6 +618,7 @@ export default function CapabilityClient() {
           text-transform: uppercase;
           color: var(--cap-muted);
           margin-top: 7px;
+          line-height: 1.4;
         }
 
         /* Page header */
@@ -737,9 +733,9 @@ export default function CapabilityClient() {
         @media (max-width: 720px) {
           .cap-sheet { min-height: 0; }
           .cap-sheet-padded { padding: 28px 22px; }
-          .cap-cover { height: 220px; }
+          .cap-cover { height: 240px; }
           .cap-cover-content { padding: 22px 24px; }
-          .cap-cover-title { font-size: 30px; }
+          .cap-cover-title { font-size: 26px; }
           .cap-block { margin: 0 22px 20px; }
           .cap-stats { margin: auto 22px 24px; grid-template-columns: 1fr 1fr; }
           .cap-stat { border-left: none; border-top: 0.5px solid var(--cap-rule); }
@@ -752,8 +748,7 @@ export default function CapabilityClient() {
           .cap-deliver-img { min-height: 200px; }
           .cap-founder { grid-template-columns: 1fr; text-align: center; }
           .cap-founder-img { margin: 0 auto; width: 150px; height: 150px; }
-          .cap-operate, .cap-gov-entities, .cap-partners, .cap-contact { grid-template-columns: 1fr !important; }
-          .cap-journey { grid-template-columns: 90px 1fr; }
+          .cap-outcomes, .cap-operate, .cap-gov-entities, .cap-partners, .cap-contact { grid-template-columns: 1fr !important; }
         }
 
         /* Print: clean A4 PDF */
