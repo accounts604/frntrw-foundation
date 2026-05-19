@@ -1,3 +1,5 @@
+export const revalidate = 60
+
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import CensusStrip from '@/components/CensusStrip'
@@ -6,12 +8,14 @@ import Team from '@/components/Team'
 import Pillars from '@/components/Pillars'
 import Lanes from '@/components/Lanes'
 import Impact from '@/components/Impact'
+import CaseStudies from '@/components/CaseStudies'
 import GroupPhoto from '@/components/GroupPhoto'
 import Outdoor from '@/components/Outdoor'
 import SponsorsCarousel from '@/components/SponsorsCarousel'
 import PartnerSection from '@/components/PartnerSection'
 import Register from '@/components/Register'
 import Governance from '@/components/Governance'
+import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -26,12 +30,14 @@ export default function Home() {
         <Pillars />
         <Lanes />
         <Impact />
+        <CaseStudies />
         <GroupPhoto />
         <Register />
         <Outdoor />
         <SponsorsCarousel />
         <PartnerSection />
         <Governance />
+        <Contact />
       </main>
       <Footer />
     </>
