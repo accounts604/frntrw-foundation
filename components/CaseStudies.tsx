@@ -1,25 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useReveal } from './useReveal'
-
-const stories = [
-  {
-    img: '/images/outdoor.jpg',
-    pillar: 'Grassroots to High Performance',
-    title: 'Three days.\nOne field.\nA generation of access.',
-  },
-  {
-    img: '/images/group-photo.jpg',
-    pillar: 'Community Focused',
-    title: 'Standing with\nNth Harbour Pasifika\nHauora.',
-  },
-  {
-    img: '/images/lane-community.jpg',
-    pillar: 'Mentorship & Leadership',
-    title: 'The coaches who showed up before the funding did.',
-  },
-]
+import { STORIES } from '@/lib/stories'
 
 export default function CaseStudies() {
   const { ref, visible } = useReveal()
@@ -44,12 +28,11 @@ export default function CaseStudies() {
           The work,<br />in their words.
         </h2>
         <p className="section-intro">
-          Every clinic, camp, and partnership generates moments worth capturing. These are being collected directly from
-          the athletes, coaches, and whānau who lived them — and published as full stories with photos as they come in.
+          Each clinic, camp, and partnership produces measurable change in athlete wellbeing, identity, and physical
+          health — captured directly from the young people, coaches, and whānau who lived it.
         </p>
       </div>
 
-      {/* Image-poster tile grid */}
       <div
         className="cs-grid"
         style={{
@@ -60,20 +43,23 @@ export default function CaseStudies() {
           marginTop: 16,
         }}
       >
-        {stories.map(s => (
-          <article
-            key={s.title}
+        {STORIES.map(s => (
+          <Link
+            key={s.slug}
+            href={`/stories/${s.slug}`}
             className="cs-tile"
             style={{
               position: 'relative',
               minHeight: 460,
               overflow: 'hidden',
               background: 'var(--charcoal)',
+              textDecoration: 'none',
+              display: 'block',
             }}
           >
             <Image
-              src={s.img}
-              alt={s.title.replace(/\n/g, ' ')}
+              src={s.heroImage}
+              alt={s.title}
               fill
               sizes="(max-width:640px) 100vw, (max-width:968px) 50vw, 33vw"
               style={{
@@ -92,7 +78,6 @@ export default function CaseStudies() {
               }}
             />
 
-            {/* Pillar tag — top left */}
             <div
               style={{
                 position: 'absolute',
@@ -112,14 +97,13 @@ export default function CaseStudies() {
               {s.pillar}
             </div>
 
-            {/* Title — overlaid bottom-left, large */}
             <h3
               className="cs-tile-title"
               style={{
                 position: 'absolute',
                 left: 28,
                 right: 28,
-                bottom: 28,
+                bottom: 64,
                 margin: 0,
                 fontFamily: "'DM Sans',sans-serif",
                 fontSize: 'clamp(26px, 2.4vw, 34px)',
@@ -131,13 +115,30 @@ export default function CaseStudies() {
                 zIndex: 2,
               }}
             >
-              {s.title}
+              {s.posterTitle}
             </h3>
-          </article>
+
+            <div
+              style={{
+                position: 'absolute',
+                left: 28,
+                bottom: 28,
+                fontSize: 10,
+                letterSpacing: 2,
+                textTransform: 'uppercase',
+                color: 'var(--gold)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                zIndex: 2,
+              }}
+            >
+              Read the story →
+            </div>
+          </Link>
         ))}
       </div>
 
-      {/* Capability statement CTA strip */}
       <div
         className="cs-capability"
         style={{
