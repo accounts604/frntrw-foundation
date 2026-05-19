@@ -29,7 +29,7 @@ export default function Nav() {
         </a>
 
         <div style={{ display: 'flex', gap: 36 }} className="nav-links-desktop">
-          {[['#about', 'The Team'], ['#programmes', 'Programmes'], ['#impact', 'Impact'], ['#stories', 'Stories'], ['#sponsor', 'Partners'], ['#register', 'Register'], ['#governance', 'Governance'], ['#contact', 'Contact']].map(([href, label]) => (
+          {[['#about', 'The Team'], ['#programmes', 'Programmes'], ['#impact', 'Impact'], ['#stories', 'Stories'], ['#sponsor', 'Partners'], ['#register', 'Register'], ['#governance', 'Governance']].map(([href, label]) => (
             <a key={href} href={href} style={{ fontSize: 11, letterSpacing: '1.8px', textTransform: 'uppercase', color: 'rgba(245,243,238,0.5)', textDecoration: 'none', transition: 'color 0.2s' }}
               onMouseOver={e => (e.currentTarget.style.color = 'var(--gold)')}
               onMouseOut={e => (e.currentTarget.style.color = 'rgba(245,243,238,0.5)')}>
@@ -67,7 +67,7 @@ export default function Nav() {
             fontSize: 28, color: 'var(--white)', cursor: 'pointer',
             background: 'none', border: 'none', lineHeight: 1,
           }}>✕</button>
-          {[['#about', 'The Team'], ['#programmes', 'Programmes'], ['#impact', 'Impact'], ['#stories', 'Stories'], ['#sponsor', 'Partners'], ['#register', 'Register'], ['#governance', 'Governance'], ['#contact', 'Contact']].map(([href, label]) => (
+          {[['#about', 'The Team'], ['#programmes', 'Programmes'], ['#impact', 'Impact'], ['#stories', 'Stories'], ['#sponsor', 'Partners'], ['#register', 'Register'], ['#governance', 'Governance']].map(([href, label]) => (
             <a key={href} href={href} onClick={() => setMenuOpen(false)} style={{
               fontSize: 28, fontWeight: 300, color: 'rgba(245,243,238,0.7)',
               textDecoration: 'none', letterSpacing: 2, textTransform: 'uppercase',

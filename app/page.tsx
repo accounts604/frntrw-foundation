@@ -1,5 +1,3 @@
-export const revalidate = 60
-
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import CensusStrip from '@/components/CensusStrip'
@@ -15,7 +13,6 @@ import SponsorsCarousel from '@/components/SponsorsCarousel'
 import PartnerSection from '@/components/PartnerSection'
 import Register from '@/components/Register'
 import Governance from '@/components/Governance'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -37,7 +34,6 @@ export default function Home() {
         <SponsorsCarousel />
         <PartnerSection />
         <Governance />
-        <Contact />
       </main>
       <Footer />
     </>
