@@ -205,9 +205,9 @@ export default function CapabilityClient() {
               representation.
             </li>
             <li>
-              <strong>Beyond</strong> — Build the elite development lane for athletes ready for the next level.
-              Establish Frntrw as the Pasifika-led athletic development pipeline that funders, sponsors, and clubs
-              trust to deliver.
+              <strong>Beyond</strong> — Establish Frntrw as the Pasifika-led athletic development pipeline that
+              funders, sponsors, clubs, and provincial pathways trust to deliver — keeping the programme free as it
+              scales.
             </li>
           </ol>
         </section>
