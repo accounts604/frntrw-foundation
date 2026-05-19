@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import CapabilityClient from './CapabilityClient'
 
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function CapabilityPage() {
-  return <CapabilityClient />
+  return (
+    <Suspense fallback={null}>
+      <CapabilityClient />
+    </Suspense>
+  )
 }
